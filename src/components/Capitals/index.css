@@ -1,0 +1,177 @@
+/* CSS for eye-catching animations */
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    -45deg,
+    #ff9068,
+    #ff4b2b,
+    #ff0066,
+    #ff4b2b,
+    #ff9068
+  ); /* Gradient background with color stops */
+  background-size: 400% 400%; /* Increase gradient size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientShift 10s infinite alternate; /* Animated gradient */
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.capitalsCard {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.95
+  ); /* Semi-transparent white card background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 30px; /* Padding inside the card */
+  text-align: center; /* Center align text */
+  animation: fadeInUp 1s ease; /* Fade-in and slide-up animation */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.selection {
+  margin-bottom: 20px; /* Add space below the selection */
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease forwards; /* Fade-in animation */
+  animation-delay: 0.5s; /* Delay animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+select {
+  padding: 14px 18px; /* Add padding to the select box */
+  font-size: 18px; /* Increase font size */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+select:hover,
+select:focus {
+  background-color: #e0e0e0; /* Darken background color on hover/focus */
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333; /* Dark text color */
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease forwards; /* Fade-in animation */
+  animation-delay: 1s; /* Delay animation */
+}
+
+.country {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px; /* Increase font size */
+  font-weight: 700;
+  color: #333; /* Dark text color */
+  opacity: 0; /* Initially hidden */
+  animation: slideInRight 1s ease forwards; /* Slide-in animation */
+  animation-delay: 1.5s; /* Delay animation */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.selection {
+  display: flex;
+  flex-direction: row;
+}
+
+/* MY OWN CODE- RAVI TEJA */
+/* .app-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #93c5fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.capitalsCard {
+  background-color: #f8fafc;
+  height: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 19px;
+  margin-right: 10px;
+  overflow: auto;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 900;
+  color: rgb(2, 2, 70);
+  text-align: center;
+}
+
+.dragAndDrop {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 900;
+}
+.question {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 800;
+  color: rgb(56, 56, 70);
+  text-align: center;
+}
+.country {
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 800;
+  color: rgb(0, 0, 117);
+  text-align: center;
+} */
